@@ -2,11 +2,17 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: I've been a Teaching Assistant at for the following courses at Georgia Tech. My responsibilities include developing, managing and grading systems oriented programming assignments, as well as assisting students through the course.
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+### CS 6210 - Advanced Operating Systems
+- Spring 2019, TA
+- Fall 2019, Head TA
+- Spring 2020, Head TA
+- Fall 2021, Head TA
 
-Organize your courses by years, topics, or universities, however you like!
+### CS 6211 - System Design for Cloud Computing
+- Spring 2022, TA
+

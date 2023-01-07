@@ -1,83 +1,140 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@inproceedings{sethuraman_foresight_2021,
+  abbr={MMSys},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+	address={New York, NY, USA},
+	series={{MMSys} '21},
+	title={Foresight: planning for spatial and temporal variations in bandwidth for streaming services on mobile devices},
+	copyright={All rights reserved},
+	isbn={978-1-4503-8434-6},
+	shorttitle={Foresight},
+	url={https://doi.org/10.1145/3458305.3463384},
+	doi={10.1145/3458305.3463384},
+	abstract={Spatiotemporal variation in cellular bandwidth availability is well-known and could affect a mobile user's quality of experience (QoE), especially while using bandwidth intensive streaming applications such as movies, podcasts, and music videos during commute. If such variations are made available to a streaming service in advance it could perhaps plan better to avoid sub-optimal performance while the user travels through regions of low bandwidth availability. The intuition is that such future knowledge could be used to buffer additional content in regions of higher bandwidth availability to tide over the deficits in regions of low bandwidth availability. Foresight is a service designed to provide this future knowledge for client apps running on a mobile device. It comprises three components: (a) a crowd-sourced bandwidth estimate reporting facility, (b) an on-cloud bandwidth service that records the spatiotemporal variations in bandwidth and serves queries for bandwidth availability from mobile users, and (c) an on-device bandwidth manager that caters to the bandwidth requirements from client apps by providing them with bandwidth allocation schedules. Foresight is implemented in the Android framework. As a proof of concept for using this service, we have modified an open-source video player---Exoplayer---to use the results of Foresight in its video buffer management. Our performance evaluation shows Foresight's scalability. We also showcase the opportunity that Foresight offers to ExoPlayer to enhance video quality of experience (QoE) despite spatiotemporal bandwidth variations for metrics such as overall higher bitrate of playback, reduction in number of bitrate switches, and reduction in the number of stalls during video playback.},
+	urldate={2021-08-18},
+	booktitle={Proceedings of the 12th {ACM} {Multimedia} {Systems} {Conference}},
+	publisher={Association for Computing Machinery},
+	author={Sethuraman, Manasvini and Sarma, Anirudh and Dhekne, Ashutosh and Ramachandran, Umakishore},
+	month=jul,
+	year={2021},
+	keywords={bandwidth management, spatiotemporal bandwidth information},
+	pages={227--240},
+  pdf={foresight.pdf},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
+@inproceedings{sethuraman_clairvoyantedge_2022,
+  abbr={SEC},
+  bibtex_show={true},
+	series={{SEC} '22},
+	title={ClairvoyantEdge: Prescient Prefetching of On-demand Video at the Edge of the Network},
+	copyright={All rights reserved},
+	%isbn={978-1-4503-8434-6},
+	shorttitle={ClairvoyantEdge},
+	%url={https://doi.org/10.1145/3458305.3463384},
+	%doi={10.1145/3458305.3463384},
+	abstract={On-demand video contributes  a large fraction of the data traffic on mobile networks. This share is expected to increase even more drastically in the coming years. While the cellular infrastructure is continuously evolving to keep pace with this increasing demand, it is necessary to ensure that sufficient bandwidth is reserved for other latency-sensitive real-time applications like video conferencing and multiplayer video games. A tangible approach involves reducing on-demand video load on cellular networks, especially from users on the move. We see an opportunity for cellular load reduction using edge nodes based on two observations: (1) video streaming is mostly a download-only operation with sequential data access; and (2) short-range mmWave links can deliver an extremely high throughput for nearby recipients of data. The knowledge of the user's planned travel route creates opportunities for \textit{prescient prefetching} and delivering the content as the vehicle passes through \textit{just in time}, using mmWave devices on \textit{en route} edge nodes. ClairvoyantEdge is a novel networked system infrastructure that leverages inter-edge node communication and the knowledge of users' trajectories to plan and deliver buffered video segments to the vehicles passing by. To evaluate ClairvoyantEdge, we built a comprehensive end-to-end emulation-based workflow that incorporates \textit{in situ} field measurements of mmWave links into our own homegrown emulation framework. With a minuscule $0.12$\% coverage of a $46\,km^2$ geographical area employing 20 edge nodes distributed in that area providing short-range mmWave access to passing vehicles, we achieve an average reduction of up to 21\% in cellular bandwidth usage for video downloads, using a real-world workload comprising 758 vehicles. Our results validate the promise of ClairvoyantEdge for incorporation in future edge infrastructure evolution.},
+	booktitle={Proceedings of the 7th {ACM}/{IEEE} {Symposium on Edge Computing}},
+	publisher={Association for Computing Machinery},
+	author={Sethuraman, Manasvini and Sarma, Anirudh and Dhekne, Ashutosh and Ramachandran, Umakishore},
+	month=dec,
+	year={2022},
+	keywords={computing, mmwave, video streaming},
+  pdf={clairvoyantedge.pdf},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@article{sarma_nfslicer_2022,
+  abbr={arXiv},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+	title={{NFSlicer}: {Data} {Movement} {Optimization} for {Shallow} {Network} {Functions}},
+	abstract={Network Function (NF) deployments on commodity servers have become ubiquitous in datacenters and enterprise settings. Many commonly used NFs such as ﬁrewalls, load balancers and NATs are shallow—i.e., they only examine the packet’s header, despite the entire packet being transferred on and off the server. As a result, the gap between moved and inspected data when handling large packets exceeds 20×. At modern network rates, such excess data movement is detrimental to performance, hurting both the average and 90\% tail latency of large packets by up to 1.7×. Our thorough performance analysis identifies high contention on the NIC-server PCIe interface and in the server’s memory hierarchy as the main bottlenecks.},
+	language={en},
+	author={Sarma, Anirudh and Seyedroudbari, Hamed and Gupta, Harshit and Ramachandran, Umakishore and Daglis, Alexandros},
+  month=mar,
+	year={2022},
+  pdf={nfslicer.pdf},
+  selected={true}
 }
+
+ @string{aps = {American Physical Society,}}
+
+ @book{einstein1956investigations,
+   bibtex_show={true},
+   title={Investigations on the Theory of the Brownian Movement},
+   author={Einstein, Albert},
+   year={1956},
+   publisher={Courier Corporation,},
+   preview={brownian-motion.gif}
+ }
+ 
+ @article{einstein1950meaning,
+   abbr={AJP},
+   bibtex_show={true},
+   title={The meaning of relativity},
+   author={Einstein, Albert and Taub, AH},
+   journal={American Journal of Physics,},
+   volume={18},
+   number={6},
+   pages={403--404},
+   year={1950},
+   publisher={American Association of Physics Teachers,}
+ }
+ 
+ @article{PhysRev.47.777,
+   abbr={PhysRev},
+   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
+   author={Einstein, A. and Podolsky, B. and Rosen, N.},
+   abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+   journal={Phys. Rev.,},
+   volume={47},
+   issue={10},
+   pages={777--780},
+   numpages={0},
+   year={1935},
+   month={May},
+   publisher=aps,
+   doi={10.1103/PhysRev.47.777},
+   url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+   html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+   pdf={example_pdf.pdf},
+   altmetric={248277},
+ }
+ 
+ @article{einstein1905molekularkinetischen,
+   title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
+   author={Einstein, A.},
+   journal={Annalen der physik,},
+   volume={322},
+   number={8},
+   pages={549--560},
+   year={1905},
+   publisher={Wiley Online Library}
+ }
+ 
+ @article{einstein1905movement,
+   abbr={Ann. Phys.},
+   title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
+   author={Einstein, A.},
+   journal={Ann. Phys.,},
+   volume={17},
+   pages={549--560},
+   year={1905}
+ }
+ 
+ @article{einstein1905electrodynamics,
+   title={On the electrodynamics of moving bodies},
+   author={Einstein, A.},
+   year={1905}
+ }
+ 
+ @book{przibram1967letters,
+   bibtex_show={true},
+   title={Letters on wave mechanics},
+   author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
+   year={1967},
+   publisher={Vision},
+   preview={wave-mechanics.gif}
+ }
+
